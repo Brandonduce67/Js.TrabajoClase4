@@ -125,6 +125,7 @@ if (opcion == 1) {
     alert ("Bienvenido disfrute de su estancia aqui!!!\nSu correo electronico es :" + correo + "\nSu contraseña es: " + contrasenia)
     
     break
+    
 
 }
 } while (opcion != 0);
