@@ -32,7 +32,6 @@ function gaturro() {
             }
         }
 }
-
 function superman() {
     let Superman = prompt ("Pelicula: Superman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
         if (Superman == 1) {
@@ -64,7 +63,6 @@ function superman() {
             }
         }
 }
-
 function batman() {
     let Batman = prompt ("Pelicula: Batman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
         if (Batman == 1) {
