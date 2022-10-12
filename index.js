@@ -1,16 +1,8 @@
-let opcion = prompt ("Cines showcase, su lugar en el mundo. \n Seleccione una opcion: \n 1: Cartelera \n 2: Entradas \n 3: Contacto \n 4: Preguntas frecuentes \n 5: Mi cuenta \n 0: Salir")
-do {
-if (opcion == 1) {
-
+function peliculas() {
     alert ("Peliculas: \n Gaturro \n Superman \n Batman")
-    break
-
-} else if (opcion == 2) {
-
-    let entradas = prompt ("Venta de entradas\nSeleccione su pelicula:\n1: Gaturro\n2: Superman\n3: Batman")
-    if (entradas == 1) {
-
-        let gaturro = prompt ("Pelicula: Gaturro:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
+}
+function gaturro() {
+    let gaturro = prompt ("Pelicula: Gaturro:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
         if (gaturro == 1) {
             let dosde = prompt ("Pelicula: Gaturro. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
             if (dosde == 1) {
@@ -39,10 +31,10 @@ if (opcion == 1) {
                 alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
             }
         }
+}
 
-    } else if (entradas == 2) {
-
-        let Superman = prompt ("Pelicula: Superman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
+function superman() {
+    let Superman = prompt ("Pelicula: Superman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
         if (Superman == 1) {
             let dosde = prompt ("Pelicula: Superman. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
             if (dosde == 1) {
@@ -71,11 +63,10 @@ if (opcion == 1) {
                 alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Superman. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
             }
         }
+}
 
-
-    } else if (entradas == 3) {
-
-        let Batman = prompt ("Pelicula: Batman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
+function batman() {
+    let Batman = prompt ("Pelicula: Batman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
         if (Batman == 1) {
             let dosde = prompt ("Pelicula: Batman. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
             if (dosde == 1) {
@@ -104,6 +95,29 @@ if (opcion == 1) {
                 alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
             }
         }
+}
+
+let opcion = prompt ("Cines showcase, su lugar en el mundo. \n Seleccione una opcion: \n 1: Cartelera \n 2: Entradas \n 3: Contacto \n 4: Preguntas frecuentes \n 5: Mi cuenta \n 0: Salir")
+do {
+if (opcion == 1) {
+
+    peliculas();
+    break
+
+} else if (opcion == 2) {
+
+    let entradas = prompt ("Venta de entradas\nSeleccione su pelicula:\n1: Gaturro\n2: Superman\n3: Batman")
+    if (entradas == 1) {
+
+        gaturro();
+
+    } else if (entradas == 2) {
+
+        superman();
+
+    } else if (entradas == 3) {
+
+        batman();
 
     }
     break
@@ -125,7 +139,6 @@ if (opcion == 1) {
     alert ("Bienvenido disfrute de su estancia aqui!!!\nSu correo electronico es :" + correo + "\nSu contraseña es: " + contrasenia)
     
     break
-    
 
 }
 } while (opcion != 0);
