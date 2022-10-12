@@ -123,6 +123,7 @@ if (opcion == 1) {
     let correo = prompt ("Inicie secion con su cuenta y contraseña.\n Correo electronico:")
     let contrasenia = prompt ("Contraseña:")
     alert ("Bienvenido disfrute de su estancia aqui!!!\nSu correo electronico es :" + correo + "\nSu contraseña es: " + contrasenia)
+    
     break
 
 }
