@@ -1,5 +1,15 @@
-function peliculas() {
-    alert ("Peliculas: \n Gaturro \n Superman \n Batman")
+//-----------------ARRAYS DE OBJETOS---------------//
+
+const peliculas = [{id: 1, nombre: "superman", lugar: "padua", horario: "17:00 hs"},
+                   {id: 2, nombre: "batman", lugar: "haedo", horario: "18:00 hs"},
+                   {id: 3, nombre: "hombre araña", lugar: "merlo", horario: "19:00 hs"},
+                   {id: 4, nombre: "hulk", lugar: "once", horario: "20:00 hs"},
+                   {id: 5, nombre: "iron man", lugar: "moron", horario: "21:00 hs"}]
+
+//-----------------ARRAYS---------------//
+
+function peliculas1() {
+    alert ("Peliculas: \n Superman \n Batman \n Hombre araña \n Hulk \n Iron man")
 }
 function gaturro() {
     let gaturro = prompt ("Pelicula: Gaturro:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
@@ -95,28 +105,20 @@ function batman() {
         }
 }
 
-let opcion = prompt ("Cines showcase, su lugar en el mundo. \n Seleccione una opcion: \n 1: Cartelera \n 2: Entradas \n 3: Contacto \n 4: Preguntas frecuentes \n 5: Mi cuenta \n 0: Salir")
+let opcion = prompt ("Cines showcase, su lugar en el mundo. \n Seleccione una opcion: \n 1: Cartelera \n 2: Entradas \n 3: Contacto \n 4: Preguntas frecuentes \n 5: Mi cuenta \n 6: Buscar peliculas \n 0: Salir")
 do {
 if (opcion == 1) {
-
-    peliculas();
+    peliculas1();
     break
-
 } else if (opcion == 2) {
 
-    let entradas = prompt ("Venta de entradas\nSeleccione su pelicula:\n1: Gaturro\n2: Superman\n3: Batman")
+    let entradas = prompt ("Venta de entradas\nSeleccione su pelicula:\n1: Superman\n2: Batman\n3: Hombre araña\n2: Hulk\n3: Iron man")
     if (entradas == 1) {
-
         gaturro();
-
     } else if (entradas == 2) {
-
         superman();
-
     } else if (entradas == 3) {
-
         batman();
-
     }
     break
 
@@ -138,7 +140,13 @@ if (opcion == 1) {
     
     break
 
+} else if (opcion == 6){
+
+let buscar = prompt("Ingrese el nombre de la pelicula que desea buscar:\n0: Salir")
+const resultado = peliculas.filter((el) => el.nombre.includes(buscar))
+alert("La pelicula " + resultado[0].nombre + " esta en cartelera, el horario y el lugar de la funcion es: a las " + resultado[0].horario + ", en " + resultado[0].lugar);
 }
+
 } while (opcion != 0);
 
 
