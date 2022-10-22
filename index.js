@@ -5,40 +5,43 @@ const peliculas = [{id: 1, nombre: "superman", lugar: "padua", horario: "17:00 h
                    {id: 3, nombre: "hombre araña", lugar: "merlo", horario: "19:00 hs"},
                    {id: 4, nombre: "hulk", lugar: "once", horario: "20:00 hs"},
                    {id: 5, nombre: "iron man", lugar: "moron", horario: "21:00 hs"}]
+const precios = [{formato: "2D", precio: 400},
+                {formato: "3D", precio: 500},
+                {formato: "4D", precio: 600}]
 
 //-----------------ARRAYS---------------//
 
-function peliculas1() {
-    alert ("Peliculas: \n Superman \n Batman \n Hombre araña \n Hulk \n Iron man")
+function cartelera() {
+    alert ("Peliculas disponibles: \n Superman \n Batman \n Hombre araña \n Hulk \n Iron man")
 }
-function gaturro() {
-    let gaturro = prompt ("Pelicula: Gaturro:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
-        if (gaturro == 1) {
-            let dosde = prompt ("Pelicula: Gaturro. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+function hombreAraña() {
+    let hombreAraña = prompt ("Pelicula: El Hombre Araña:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
+        if (hombreAraña == 1) {
+            let dosde = prompt ("Pelicula: El hombre Araña. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
             if (dosde == 1) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 2D. Establecimiento: Moron\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 2D. Establecimiento: Moron\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
             } else if (dosde == 2) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 2D. Establecimiento: Moreno\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 2D. Establecimiento: Moreno\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
             } else if (dosde == 3) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 2D. Establecimiento: Padua\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 2D. Establecimiento: Padua\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
             }
-        } else if (gaturro == 2) {
-            let tresde = prompt ("Pelicula: Gaturro. Formato: 3D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+        } else if (hombreAraña == 2) {
+            let tresde = prompt ("Pelicula: hombreAaraña. Formato: 3D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
             if (tresde == 1) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 3D. Establecimiento: Moron\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 3D. Establecimiento: Moron\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
             } else if (tresde == 2) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 3D. Establecimiento: Moreno\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 3D. Establecimiento: Moreno\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
             } else if (tresde == 3) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 3D. Establecimiento: Padua\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 3D. Establecimiento: Padua\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
             }
-        } else if (gaturro == 3) {
-            let cuatrode = prompt ("Pelicula: Gaturro. Formato: 4D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+        } else if (hombreAraña == 3) {
+            let cuatrode = prompt ("Pelicula: hombreAaraña. Formato: 4D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
             if (cuatrode == 1) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 4D. Establecimiento: Moron\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 4D. Establecimiento: Moron\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
             } else if (cuatrode == 2) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 4D. Establecimiento: Moreno\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 4D. Establecimiento: Moreno\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
             } else if (cuatrode == 3) {
-                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Gaturro. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: El Hombre Araña. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
             }
         }
 }
@@ -104,21 +107,87 @@ function batman() {
             }
         }
 }
+function hulk() {
+    let Batman = prompt ("Pelicula: hulk:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
+        if (Batman == 1) {
+            let dosde = prompt ("Pelicula: hulk. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+            if (dosde == 1) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 2D. Establecimiento: Moron\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (dosde == 2) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 2D. Establecimiento: Moreno\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (dosde == 3) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 2D. Establecimiento: Padua\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+            }
+        } else if (Batman == 2) {
+            let tresde = prompt ("Pelicula: hulk. Formato: 3D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+            if (tresde == 1) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 3D. Establecimiento: Moron\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (tresde == 2) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 3D. Establecimiento: Moreno\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (tresde == 3) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 3D. Establecimiento: Padua\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+            }
+        } else if (Batman == 3) {
+            let cuatrode = prompt ("Pelicula: hulk. Formato: 4D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+            if (cuatrode == 1) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 4D. Establecimiento: Moron\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (cuatrode == 2) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 4D. Establecimiento: Moreno\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (cuatrode == 3) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: hulk. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+            }
+        }
+}
+function ironman() {
+    let Batman = prompt ("Pelicula: Batman:\nSeleccione en que formato quiere ver su pelicula:\n1: 2D (400$)\n2: 3D (500$)\n3: 4D (600$)")
+        if (Batman == 1) {
+            let dosde = prompt ("Pelicula: Batman. Formato: 2D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+            if (dosde == 1) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 2D. Establecimiento: Moron\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (dosde == 2) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 2D. Establecimiento: Moreno\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (dosde == 3) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 2D. Establecimiento: Padua\nSon 400$$ \n!!Que disfrute de su pelicula¡¡")
+            }
+        } else if (Batman == 2) {
+            let tresde = prompt ("Pelicula: Batman. Formato: 3D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+            if (tresde == 1) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 3D. Establecimiento: Moron\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (tresde == 2) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 3D. Establecimiento: Moreno\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (tresde == 3) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 3D. Establecimiento: Padua\nSon 500$$ \n!!Que disfrute de su pelicula¡¡")
+            }
+        } else if (Batman == 3) {
+            let cuatrode = prompt ("Pelicula: Batman. Formato: 4D.\nSeleccione establecimiento:\n1: Moron\n2: Moreno\n3: Padua")
+            if (cuatrode == 1) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 4D. Establecimiento: Moron\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (cuatrode == 2) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 4D. Establecimiento: Moreno\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+            } else if (cuatrode == 3) {
+                alert ("Felicidades usted termino el proceso de la compra de su entrada..\nPelicula: Batman. Formato: 4D. Establecimiento: Padua\nSon 600$$ \n!!Que disfrute de su pelicula¡¡")
+            }
+        }
+}
 
 let opcion = prompt ("Cines showcase, su lugar en el mundo. \n Seleccione una opcion: \n 1: Cartelera \n 2: Entradas \n 3: Contacto \n 4: Preguntas frecuentes \n 5: Mi cuenta \n 6: Buscar peliculas \n 0: Salir")
 do {
 if (opcion == 1) {
-    peliculas1();
+    cartelera();
     break
 } else if (opcion == 2) {
 
     let entradas = prompt ("Venta de entradas\nSeleccione su pelicula:\n1: Superman\n2: Batman\n3: Hombre araña\n2: Hulk\n3: Iron man")
     if (entradas == 1) {
-        gaturro();
-    } else if (entradas == 2) {
         superman();
-    } else if (entradas == 3) {
+    } else if (entradas == 2) {
         batman();
+    } else if (entradas == 3) {
+        hombreAraña();
+    } else if (entradas == 4){
+        hulk();
+    } else if (entradas == 5){
+        ironman();
     }
     break
 
