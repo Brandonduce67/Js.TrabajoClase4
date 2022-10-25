@@ -225,12 +225,3 @@ alert("La pelicula " + resultado[0].nombre + " esta en cartelera, el horario es:
 
 
 
-
-
-
-
-
-
-
-
-
